@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_conectado"
+        android:icon="@drawable/ic_bluetooth_connected"
+        android:orderInCategory="100"
+        android:title="@string/title_connected"
+        android:visible="false"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_desconectado"
+        android:icon="@drawable/ic_bluetooth_disabled"
+        android:orderInCategory="101"
+        android:title="@string/title_not_connected"
+        android:visible="false"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_conectando"
+        android:icon="@drawable/ic_bluetooth_searching"
+        android:orderInCategory="102"
+        android:title="@string/title_connecting"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_mudar_dispositivo"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="103"
+        android:title="@string/lb_menu_trocar_dispositivo" />
+    <item
+        android:id="@+id/menu_reconectar"
+        android:icon="@drawable/ic_bluetooth_searching"
+        android:orderInCategory="103"
+        android:title="@string/lb_menu_reconectar" />
+</menu>

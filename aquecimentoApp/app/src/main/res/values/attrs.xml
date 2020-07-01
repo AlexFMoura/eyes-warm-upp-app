@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SecondsPicker">
+        <attr name="value" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HourMinSecPicker">
+        <attr name="milliseconds" format="float" />
+    </declare-styleable>
+</resources>

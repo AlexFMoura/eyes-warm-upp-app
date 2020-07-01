@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_list_device_scan_dispositivos"
+        android:icon="@drawable/ic_bluetooth_searching"
+        android:orderInCategory="100"
+        android:title="@string/menu_procurar_dispositivos_nao_pareados"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hour_min_sec_picker_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:drawableStart="@drawable/ic_timer_black" />
+
+    <NumberPicker
+        android:id="@+id/numpicker_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </NumberPicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=":"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numpicker_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+    </NumberPicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=":"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numpicker_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </NumberPicker>
+
+</LinearLayout>

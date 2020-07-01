@@ -1,0 +1,72 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Eyes Warm Up Server</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_execucao_treinamento">Execução Treinamento</string>
+    <string name="menu_conf_exercicio">Configurações Exercício</string>
+    <string name="menu_conf_padrao_treinamento">Configurações Treinamento</string>
+    <string name="menu_conf_dispositivo">Configurações Dispositivos</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="title_activity_config_exercicio_parametros">Configuração Parametros Aquecimento</string>
+    <string name="title_activity_list_new_device">Selecione um dispositivo para conectar</string>
+    <string name="title_activity_seleciona_padrao_treinamento">Selecione um Treinamento</string>
+    <string name="title_connecting">Conectando...</string>
+    <string name="title_connected_to">Conectado a <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_connected">Conectado</string>
+    <string name="title_not_connected">Desconectado</string>
+    <string name="title_scanning">Procurando dispositivos...</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_conf_exercicio">Configuração Exercício</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_aquecimento">Aquecimento</string>
+    <string name="title_activity_conf_aquecimento">Configuração Aquecimento</string>
+
+    <string name="menu_procurar_dispositivos_pereados">Procurar Dispositivos Pareados</string>
+    <string name="menu_procurar_dispositivos_nao_pareados">Procurar Dispositivos não Pareados</string>
+    <string name="menu_habilitar_bluetooth">Habilitar Bluetooth</string>
+    <string name="menu_salvar">SALVAR</string>
+    <string name="menu_cancelar">CANCELAR</string>
+    <string name="menu_adicionar">ADICIONAR</string>
+
+    <string name="btn_procurar">PROCURAR</string>
+    <string name="btn_desparear">Desparear</string>
+
+    <string name="lb_qtd_dispositivos_clientes">Quantidade Dispositivos Clientes</string>
+    <string name="lb_tempo_repeticao_exercicio">Tempo de Repetição dos Exercícios</string>
+    <string name="lb_tempo_visualizacao_caracteres">Tempo de visualização dos números</string>
+    <string name="lb_tempo_emissao_beep">Tempo de emissão do som do BEEP</string>
+    <string name="lb_tempo_entre_numero_beep">Tempo entre o Número e o BEEP</string>
+    <string name="lb_tempo_troca_entre_dispositivos">Tempo de troca entre os dispositivos</string>
+    <string name="lb_sequencia_numero">Sequência de Números</string>
+    <string name="lb_ativar_beep">Ativar Beep</string>
+    <string name="lb_dispositivos_pareados">DISPOSITIVOS PAREADOS</string>
+    <string name="lb_dispositivos_disponiveis">DISPOSITIVOS DISPONÍVEIS</string>
+    <string name="lb_dispositivos_configurados">DISPOSITIVOS CONFIGURADOS</string>
+    <string name="lb_bluetooth">Bluetooth</string>
+    <string name="lb_texto_execuxao_treinamento">Verifique se o seu aparelho está com o Bluetooth ativo. É necessário parear os aparelhos antes de realizar esta configuração.</string>
+    <string name="lb_texto_conf_dispositivos">Verifique se o seu aparelho está com o Bluetooth ativo. É permitido configurar no máximo 7 dispositivos.</string>
+    <string name="lb_nenhum_dispositivo_encontrado">Nenhum dispositivo encontrado</string>
+    <string name="lb_nenhum_dispositivo_pareado">Nenhum dispositivo pareado</string>
+    <string name="lb_dispositivo">Dispositivo</string>
+    <string name="lb_identificacao_dispositivo">Identificação do Dispositivo</string>
+    <string name="ld_status_conexao">Status da Conexão</string>
+    <string name="lb_ativar_conexao">Ativar Conexões</string>
+    <string name="lb_ativar_aquecimento">Ativar Aquecimento</string>
+    <string name="lb_nome_padrao_treinamento">Nome Padrão Treinamento</string>
+    <string name="lb_descricao_padrao_treinamento">Descrição Padrão Treinamento</string>
+
+    <string name="msg_validacao_ja_possui_um_dispositivo_com_esta_identificacao">Já possui um dispositivo com está identificação!</string>
+    <string name="msg_numero_dispositivo_conectados_incompleto">O número de dispositivos conectados é diferente do número exigido!</string>
+    <string name="msg_permissao_habilitar_bluetooth">Eyes Warm Up quer ativar o Bluetooth</string>
+    <string name="msg_aplicar_padrao_conf_dispositivos">Você deseja aplicar estas mesmas configurações para os demais dispositivos?</string>
+</resources>

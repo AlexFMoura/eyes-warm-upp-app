@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.confdispositivos.ListNewDeviceActivity">
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:minHeight="300dp"
+        android:stackFromBottom="true" />
+
+    <TextView
+        android:id="@+id/lb_nenhum_dispositivo_novo_encontrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="@string/lb_nenhum_dispositivo_encontrado"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_procurar" />
+</LinearLayout>

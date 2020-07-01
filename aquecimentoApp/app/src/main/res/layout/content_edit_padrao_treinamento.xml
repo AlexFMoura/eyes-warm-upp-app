@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/lb_nome_padrao_treinamento"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextNomePadraoTreinamento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="@+id/textView1"
+                    app:layout_constraintStart_toStartOf="@+id/textView1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lb_descricao_padrao_treinamento"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextNomePadraoTreinamento"
+                    app:layout_constraintStart_toStartOf="@+id/editTextNomePadraoTreinamento"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNomePadraoTreinamento" />
+
+                <EditText
+                    android:id="@+id/editTextDescricaoPadraoTreinamento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lb_tempo_troca_entre_dispositivos"
+                    app:layout_constraintEnd_toEndOf="@+id/editTextDescricaoPadraoTreinamento"
+                    app:layout_constraintStart_toStartOf="@+id/editTextDescricaoPadraoTreinamento"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDescricaoPadraoTreinamento" />
+
+                <br.org.sistemafieg.aquecimentoapp.components.picker.SecondsPicker
+                    android:id="@+id/secondsPickerTempoTrocaEntreDispositivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lb_tempo_repeticao_exercicio"
+                    app:layout_constraintEnd_toEndOf="@+id/secondsPickerTempoTrocaEntreDispositivos"
+                    app:layout_constraintStart_toStartOf="@+id/secondsPickerTempoTrocaEntreDispositivos"
+                    app:layout_constraintTop_toBottomOf="@+id/secondsPickerTempoTrocaEntreDispositivos" />
+
+                <br.org.sistemafieg.aquecimentoapp.components.picker.HourMinSecPicker
+                    android:id="@+id/hourMinSecPickerTempoExecucaoTreinamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+                <ViewAnimator
+                    android:id="@+id/viewAnimator2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="@+id/hourMinSecPickerTempoExecucaoTreinamento"
+                    app:layout_constraintStart_toStartOf="@+id/hourMinSecPickerTempoExecucaoTreinamento"
+                    app:layout_constraintTop_toBottomOf="@+id/hourMinSecPickerTempoExecucaoTreinamento" />
+
+                <TextView
+                    android:id="@+id/title_paired_devices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/lb_dispositivos_configurados"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="@+id/hourMinSecPickerTempoExecucaoTreinamento"
+                    app:layout_constraintTop_toBottomOf="@+id/hourMinSecPickerTempoExecucaoTreinamento" />
+
+                <ListView
+                    android:id="@+id/listViewPadraoTreinamentoDispositivoConfExerciciosItens"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="450dp"
+                    android:layout_marginEnd="16dp"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/title_paired_devices"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

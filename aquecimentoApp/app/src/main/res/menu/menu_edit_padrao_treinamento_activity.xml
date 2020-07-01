@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_edit_padrao_treinamento_activity_salvar"
+        android:orderInCategory="1"
+        android:title="@string/menu_salvar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_edit_padrao_treinamento_activity_cancelar"
+        android:title="@string/menu_cancelar"
+        app:showAsAction="ifRoom" />
+</menu>

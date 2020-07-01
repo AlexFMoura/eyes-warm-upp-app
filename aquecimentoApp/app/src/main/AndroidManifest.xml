@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.org.sistemafieg.aquecimentoapp">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AquecimentoActivity"
+            android:label="@string/title_activity_aquecimento"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragments.confdispositivos.EditConfDeviceActivity"
+            android:label="Dispositivo Emparelhado"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".apagar.ListDeviceActivity"
+            android:label="Bluetooth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragments.confdispositivos.ListNewDeviceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_list_new_device"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+        <activity
+            android:name=".fragments.confpadraotreinamento.EditPadraoTreinamentoActivity"
+            android:label="Padrão Treinamento"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".fragments.confpadraotreinamento.EditItemPadraoTreinamentoActivity"
+            android:label="Conf. Padrão Treinamento"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".fragments.execucaotreinamento.SelecionaPadraoTreinamentoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_seleciona_padrao_treinamento"
+            android:theme="@android:style/Theme.Holo.Dialog"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

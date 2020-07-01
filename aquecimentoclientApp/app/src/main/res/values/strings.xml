@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Eyes Warm Up</string>
+
+    <string name="title_connecting">Conectando...</string>
+    <string name="title_connected_to">Conectado a <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Desconectado</string>
+    <string name="title_connected">Conectado</string>
+
+    <string name="lb_bem_vindo">Bem-vindo</string>
+    <string name="lb_conectar">Conectar</string>
+    <string name="lb_nome_app">Eyes Warm Up</string>
+    <string name="lb_menu_trocar_dispositivo">Trocar de Dispositivo</string>
+    <string name="lb_menu_reconectar">Reconectar</string>
+    <string name="lb_identificacao_dispositivo">Identificação do Dispositivo</string>
+    <string name="lb_cor_layout_dispositivo">Cor de Plano de Fundo</string>
+
+    <string name="msg_bluetooth_desativado">O bluetooth do dispositivo está desativado</string>
+
+</resources>
